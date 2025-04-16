@@ -12,10 +12,7 @@ const books = [
 const getTheTitlesBook = getTheTitles(books);
 
 function getTheTitles(array) {
-    for (let title in array){
-        return array[title] ; 
-    }
-  
+   return array.map((book)=>{return book.title})
 }
 console.log(getTheTitlesBook)
 // Do not edit below this line
